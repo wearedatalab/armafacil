@@ -5,11 +5,12 @@ import type { Accent } from "@/lib/content";
  * Estilo de blueprint cálido, coherente con el tema educativo/técnico.
  */
 
+// Acentos de marca: verde y azul marino (los muebles alternan entre ambos).
 const ACCENT_HEX: Record<Accent, { bg: string; line: string }> = {
-  walnut: { bg: "#EFE3D6", line: "#8A5A3B" },
-  honey: { bg: "#F6E7CE", line: "#C77F2A" },
-  forest: { bg: "#DCEBE2", line: "#2F7D5B" },
-  clay: { bg: "#F3DDD5", line: "#C75D43" },
+  walnut: { bg: "#E3F1E6", line: "#1E8C36" }, // verde
+  forest: { bg: "#E3F1E6", line: "#1E8C36" }, // verde
+  honey: { bg: "#E5E4F0", line: "#2A2568" }, // azul marino
+  clay: { bg: "#E5E4F0", line: "#2A2568" }, // azul marino
 };
 
 function Shape({ slug }: { slug: string }) {

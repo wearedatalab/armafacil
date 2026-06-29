@@ -185,7 +185,7 @@ export function HomeView() {
                 href={whatsappLink(`Hola ${SITE.brand}, quiero el servicio de armado a domicilio.`)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn bg-forest text-cream hover:bg-honey hover:text-ink"
+                className="btn bg-walnut text-cream hover:bg-paper hover:text-ink"
               >
                 <WhatsAppIcon className="h-5 w-5" />
                 {dict.home.bandCta}

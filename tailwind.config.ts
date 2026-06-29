@@ -9,16 +9,17 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Paleta ArmaFácil — cálida, artesanal, de confianza
-        ink: "#211B14", // texto principal
-        cream: "#F7F1E7", // fondo cálido
+        // Paleta de marca — verde + azul marino del logo (la "W")
+        ink: "#1E1A4D", // azul marino: texto principal y secciones oscuras
+        cream: "#F4F7F4", // fondo claro, neutro frío
         paper: "#FFFFFF",
-        walnut: "#8A5A3B", // marca / madera nogal
-        honey: "#E0913C", // acento cálido (CTAs, energía)
-        forest: "#2F7D5B", // acento funcional (éxito, herramientas, "fácil")
-        clay: "#C75D43", // acento de alerta cálido
-        sand: "#EBE2D2", // superficies/bordes suaves
-        stone: "#6F6457", // texto secundario
+        // Tokens conservados por compatibilidad; remapeados a los 2 colores de marca:
+        walnut: "#25A23D", // VERDE de marca (acción principal, enlaces, acentos)
+        forest: "#1E8C36", // verde más profundo (WhatsApp / ayuda / "fácil")
+        honey: "#1E1A4D", // azul marino (acento secundario)
+        clay: "#1E1A4D", // azul marino (acento)
+        sand: "#E2E8E2", // bordes / superficies suaves
+        stone: "#586159", // texto secundario
       },
       fontFamily: {
         display: ["var(--font-fraunces)", "Georgia", "serif"],
@@ -32,8 +33,8 @@ const config: Config = {
         edge: "1200px",
       },
       boxShadow: {
-        soft: "0 1px 2px rgba(33,27,20,0.04), 0 8px 24px rgba(33,27,20,0.06)",
-        lift: "0 2px 4px rgba(33,27,20,0.05), 0 18px 40px rgba(33,27,20,0.10)",
+        soft: "0 1px 2px rgba(30,26,77,0.05), 0 8px 24px rgba(30,26,77,0.07)",
+        lift: "0 2px 4px rgba(30,26,77,0.06), 0 18px 40px rgba(30,26,77,0.12)",
       },
       keyframes: {
         "fade-up": {

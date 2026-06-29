@@ -17,7 +17,7 @@
   }
 
   ::selection {
-    @apply bg-honey/30 text-ink;
+    @apply bg-walnut/25 text-ink;
   }
 
   /* Anillo de foco accesible y consistente */
@@ -43,7 +43,7 @@
     @apply btn bg-walnut text-cream hover:bg-ink hover:-translate-y-0.5 shadow-soft;
   }
   .btn-honey {
-    @apply btn bg-honey text-ink hover:bg-walnut hover:text-cream hover:-translate-y-0.5 shadow-soft;
+    @apply btn bg-ink text-cream hover:bg-walnut hover:text-cream hover:-translate-y-0.5 shadow-soft;
   }
   .btn-ghost {
     @apply btn border border-sand bg-paper/60 text-ink hover:border-walnut hover:bg-paper;

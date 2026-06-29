@@ -1,20 +1,26 @@
 import { SITE } from "@/lib/site";
 
+/**
+ * Marca: la "W" del logo — dos hojas verdes y un triángulo azul marino.
+ * Los colores están en línea para que el logo sea exacto a la marca.
+ */
 export function Logo({ className = "" }: { className?: string }) {
   return (
-    <span className={`inline-flex items-center gap-2 ${className}`}>
-      <svg viewBox="0 0 32 32" className="h-7 w-7" aria-hidden="true">
-        <rect width="32" height="32" rx="8" className="fill-walnut" />
-        {/* llave Allen estilizada formando una "A" */}
-        <path
-          d="M10 23 L16 9 L22 23"
-          fill="none"
-          stroke="#F7F1E7"
-          strokeWidth="2.2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path d="M12.6 17.5 H19.4" stroke="#E0913C" strokeWidth="2.2" strokeLinecap="round" />
+    <span className={`inline-flex items-center gap-2.5 ${className}`}>
+      <svg
+        viewBox="0 0 32 22"
+        className="h-[1.35rem] w-9"
+        aria-hidden="true"
+        fill="none"
+        strokeLinejoin="round"
+        strokeLinecap="round"
+      >
+        {/* hoja 1 (verde) */}
+        <path d="M1 2 H13 V7.5 L9 20 Z" fill="#25A23D" stroke="#25A23D" strokeWidth="1.4" />
+        {/* hoja 2 (verde) */}
+        <path d="M13.6 2 H25.6 V7.5 L21.6 20 Z" fill="#25A23D" stroke="#25A23D" strokeWidth="1.4" />
+        {/* hoja 3 (azul marino) */}
+        <path d="M26.4 2 H31 L28.7 9.6 Z" fill="#1E1A4D" stroke="#1E1A4D" strokeWidth="1.4" />
       </svg>
       <span className="font-display text-lg font-semibold tracking-tightest text-ink">
         {SITE.brand}
